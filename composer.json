@@ -14,13 +14,6 @@
   "require": {
     "php": ">=5.4.0",
 
-    "amos/cmsbridge": "dev-master",
-    "amos/highlights": "^1.0.0",
-    "amos/newsletter": "dev-master",
-    "amos/results": "^1.0.0",
-    "amos/signals": "dev-master",
-    "amos/site-management": "^1.0.2",
-    "amos/statistics": "^1.0.0",
     "lispa/amos-admin": "^2.0.19",
     "lispa/amos-assistance-request": "^1.0.0",
     "lispa/amos-attachments": "^1.1.9",
@@ -60,9 +53,6 @@
     "lispa/amos-upload": "^1.0.8",
     "lispa/amos-videoconference": "^1.0.4",
     "lispa/amos-workflow": "^1.0.8",
-    "open2/amos-ticket": "dev-master",
-    "open2/frontendform": "dev-master",
-    "open20/frontend": "dev-master",
 
     "kartik-v/yii2-datecontrol": "@dev",
     "kartik-v/yii2-password": "@dev",
