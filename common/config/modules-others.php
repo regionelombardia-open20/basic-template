@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
@@ -21,7 +21,7 @@ return [
         'root' => [
 	    '@frontend',
             '@app', // The root directory of the project scan.
-            '@vendor/lispa/',
+            '@vendor/open20/',
         ],
             'scanRootParentDirectory' => true, // Whether scan the defined `root` parent directory, or the folder itself.
         // IMPORTANT: for detailed instructions read the chapter about root configuration.

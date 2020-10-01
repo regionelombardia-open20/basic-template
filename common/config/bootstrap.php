@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 
@@ -21,7 +21,8 @@ function pr($var, $info = '') {
     if ($info) {
         $info = "<strong>$info: </strong>";
     }
-    $result = "<pre style='font-size:11px;text-align:left;background:#fff;color:#000;'>$info";
+    $debug = debug_backtrace(0);
+    $result = "<pre style='font-size:11px;text-align:left;background:#fff;color:#000;'><strong>".$debug[0]['file'] ." ".$debug[0]['line']."</strong><br /> $info";
     $dump = print_r($var, true);
     $dump = highlight_string("<?php\n" . $dump, true);
     $dump = preg_replace('/&lt;\\?php<br \\/>/', '', $dump, 1);

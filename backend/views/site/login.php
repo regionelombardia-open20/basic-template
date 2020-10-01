@@ -1,18 +1,16 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 
-
 use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;
-
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */

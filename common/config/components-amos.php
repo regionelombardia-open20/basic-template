@@ -1,17 +1,17 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 
 return [
     'formatter' => [
-        'class' => 'lispa\amos\core\formatter\Formatter',
+        'class' => 'open20\amos\core\formatter\Formatter',
         'dateFormat' => 'php:d/m/Y',
         'datetimeFormat' => 'php:d/m/Y H:i',
         'timeFormat' => 'php:H:i',
@@ -22,12 +22,12 @@ return [
         'decimalSeparator' => ',',
     ],
     'imageUtility' => [
-        'class' => 'lispa\amos\core\components\ImageUtility',
+        'class' => 'open20\amos\core\components\ImageUtility',
     ],
     'view' => [
-         'class' => 'lispa\amos\core\components\AmosView',
+         'class' => 'open20\amos\core\components\AmosView',
     ],
     'workflowSource' => [
-        'class' => 'lispa\amos\core\workflow\ContentDefaultWorkflowDbSource',
+        'class' => 'open20\amos\core\workflow\ContentDefaultWorkflowDbSource',
     ],
 ];

@@ -1,10 +1,10 @@
 <?php
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 return [
@@ -33,8 +33,8 @@ return [
         'name' => 'advanced-backend',
     ],
     'user' => [
-        'class' => 'lispa\amos\core\user\AmosUser',
-        'identityClass' => 'lispa\amos\core\user\User',
+        'class' => 'open20\amos\core\user\AmosUser',
+        'identityClass' => 'open20\amos\core\user\User',
         'loginUrl' => '/admin/security/login',
         'enableAutoLogin' => true,
         'identityCookie' => [
@@ -44,6 +44,6 @@ return [
         ],
     ],
     'socialShare' => [
-        'class' => \lispa\amos\core\components\ConfiguratorSocialShare::class,
+        'class' => \open20\amos\core\components\ConfiguratorSocialShare::class,
     ],
 ];

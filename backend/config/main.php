@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 
@@ -50,23 +50,20 @@ if ($params['template-amos'] === true) {
 if (isset($modules['tag'])) {
 
     if (isset($modules['community'])) {
-        $modules['tag']['modelsEnabled'][] = 'lispa\amos\community\models\Community';
+        $modules['tag']['modelsEnabled'][] = 'open20\amos\community\models\Community';
     }
     if (isset($modules['discussioni'])) {
-        $modules['tag']['modelsEnabled'][] = 'lispa\amos\discussioni\models\DiscussioniTopic';
+        $modules['tag']['modelsEnabled'][] = 'open20\amos\discussioni\models\DiscussioniTopic';
     }
     if (isset($modules['documenti'])) {
-        $modules['tag']['modelsEnabled'][] = 'lispa\amos\documenti\models\Documenti';
-    }
-    if (isset($modules['events'])) {
-        $modules['tag']['modelsEnabled'][] = 'lispa\amos\events\models\Event';
+        $modules['tag']['modelsEnabled'][] = 'open20\amos\documenti\models\Documenti';
     }
     if (isset($modules['news'])) {
-        $modules['tag']['modelsEnabled'][] = 'lispa\amos\news\models\News';
+        $modules['tag']['modelsEnabled'][] = 'open20\amos\news\models\News';
     }
     if (isset($modules['organizzazioni'])) {
-        $modules['tag']['modelsEnabled'][] = 'lispa\amos\organizzazioni\models\Profilo';
-        $modules['tag']['modelsEnabled'][] = 'lispa\amos\organizzazioni\models\ProfiloSedi';
+        $modules['tag']['modelsEnabled'][] = 'open20\amos\organizzazioni\models\Profilo';
+        $modules['tag']['modelsEnabled'][] = 'open20\amos\organizzazioni\models\ProfiloSedi';
     }
 }
 
@@ -84,6 +81,7 @@ return [
     'defaultRoute' => '/admin/security/login',
     'homeUrl' => '/dashboard',
     'id' => 'app-backend',
+    'name' => 'Amos Basic Template',
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'bootstrap' => $bootstrap,
     'components' => $components,

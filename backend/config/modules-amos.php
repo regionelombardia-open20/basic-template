@@ -1,18 +1,18 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 
 $modules = [
     'amministra-utenti' => [
-        'class' => 'mdm\admin\Module',
-        'layout' => "@vendor/lispa/amos-core/views/layouts/admin",
+        'class' => 'open20\amos\admin\RoleManager',
+        'layout' => "@vendor/open20/amos-core/views/layouts/admin",
         //'left-menu', // it can be '@path/to/your/layout'.
         'controllerMap' => [
             'assignment' => [
@@ -20,11 +20,6 @@ $modules = [
                 'userClassName' => 'common\models\User',
                 'idField' => 'id'
             ],
-            /*
-              'other' => [
-              'class' => 'path\to\OtherController', // add another controller
-              ],
-             */
         ],
         'menus' => [
             'assignment' => [
@@ -32,77 +27,27 @@ $modules = [
             ],
         ]
     ],
-    'chat' => [
-        'class' => 'lispa\amos\chat\AmosChat',
-    ],
-    'comments' => [
-       'class' => 'lispa\amos\comments\AmosComments',
-       'modelsEnabled' => [
-	   'lispa\amos\discussioni\models\DiscussioniTopic',
-           'lispa\amos\documenti\models\Documenti',
-           'lispa\amos\events\models\Event',
-           'lispa\amos\news\models\News',
-       ],
-	],
     'comuni' => [
-        'class' => 'lispa\amos\comuni\AmosComuni',
-    ],
-    'cwh' => [
-        'class' => 'lispa\amos\cwh\AmosCwh',
+        'class' => 'open20\amos\comuni\AmosComuni',
     ],
     'dashboard' => [
-        'class' => 'lispa\amos\dashboard\AmosDashboard',
-    ],
-    'discussioni' => [
-        'class' => 'lispa\amos\discussioni\AmosDiscussioni',
-    ],
-    'documenti' => [
-        'class' => 'lispa\amos\documenti\AmosDocumenti',
+        'class' => 'open20\amos\dashboard\AmosDashboard',
     ],
     'layout' => [
-        'class' => 'lispa\amos\layout\Module',
+        'class' => 'open20\amos\layout\Module',
     ],
     'myactivities' => [
-         'class' => 'lispa\amos\myactivities\AmosMyActivities',
-    ],
-    'news' => [
-        'class' => 'lispa\amos\news\AmosNews',
-    ],
-    'organizzazioni' => [
-        'class' => 'lispa\amos\organizzazioni\Module'
-    ],
-    'partnershipprofiles' => [
-        'class' => 'lispa\amos\partnershipprofiles\Module'
+         'class' => 'open20\amos\myactivities\AmosMyActivities',
     ],
     'privileges' => [
-	    'class' => 'lispa\amos\privileges\AmosPrivileges',
-    ],
-    'slideshow' => [
-        'class' => 'lispa\amos\slideshow\AmosSlideshow'
-    ],
-    'tag' => [
-        'class' => 'lispa\amos\tag\AmosTag',
+	    'class' => 'open20\amos\privileges\AmosPrivileges',
     ],
     'upload' => [
-        'class' => 'lispa\amos\upload\AmosUpload',
-    ],
-    'utility' => [
-        'class' => 'lispa\amos\utility\Module'
-    ],
-    'report' => [
-        'class' => 'lispa\amos\report\AmosReport',
-        'modelsEnabled' => [
- 	    'lispa\amos\discussioni\models\DiscussioniTopic',
-	    'lispa\amos\documenti\models\Documenti',
-	    'lispa\amos\events\models\Event',
-            'lispa\amos\news\models\News',
-        ]
+        'class' => 'open20\amos\upload\AmosUpload',
     ],
     'workflow' => [
-       'class' => 'lispa\amos\workflow\AmosWorkflow',
+       'class' => 'open20\amos\workflow\AmosWorkflow',
    ],
-
 ];
-
 
 return $modules;

@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 
@@ -13,7 +13,7 @@ use kartik\datecontrol\Module;
 
 return [
     'audit' => [
-        'class' => 'bedezign\yii2\audit\Audit',
+        'class' => 'open20\amos\audit\Audit',
         'db' => 'db',
         'accessRoles' => ['ADMIN'],
         'ignoreActions' => [
@@ -75,16 +75,6 @@ return [
             'id' => 'UA-88133453-2',
             'domain' => 'appdemoweb.org',
         ],
-    ],
-    'treemanager' => [
-        'class' => '\kartik\tree\Module',
-        // enter other module properties if needed
-        // for advanced/personalized configuration
-        // (refer module properties available below)
-        'dataStructure' => ['nameAttribute' => 'nome']
-    ],
-    'workflow-manager' => [
-        'class' => 'cornernote\workflow\manager\Module',
     ],
     /****************DO NOT REMOVE****************/
 ];

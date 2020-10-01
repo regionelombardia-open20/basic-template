@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Lombardia Informatica S.p.A.
+ * Aria S.p.A.
  * OPEN 2.0
  *
  *
- * @package    lispa\amos\basic\template
+ * @package    open20\amos\basic\template
  * @category   CategoryName
  */
 
@@ -15,7 +15,7 @@ return [
         'forceCopy' => false,
         'hashCallback' => function ($path) {
             return hash('md4', $path);
-         },
+        },
         'converter' => [
             'class' => 'cakebake\lessphp\AssetConverter',
             'compress' => true,
@@ -25,7 +25,7 @@ return [
         ],
     ],
     'authManager' => [
-        'class' => 'lispa\amos\core\rbac\DbManagerCached',
+        'class' => 'open20\amos\core\rbac\DbManagerCached',
         'cache' => 'rbacCache'
     ],
     'cache' => [
@@ -53,7 +53,7 @@ return [
     'i18n' => [
         'translations' => [
             '*' => [
-                'class' => 'lispa\amos\core\i18n\MessageSource',
+                'class' => 'open20\amos\core\i18n\MessageSource',
                 'db' => 'db',
                 'sourceLanguage' => 'it-IT', // Developer language
                 'sourceMessageTable' => '{{%language_source}}',
@@ -61,9 +61,10 @@ return [
                 'cachingDuration' => 86400,
                 'enableCaching' => true,
                 'forceTranslation' => true,
+                'defaultLanguage' => 'it-IT',
                 'autoUpdate' => true,
                 'extraCategoryPaths' => [
-                    'amoscore' => '@vendor/lispa/amos-core/i18n',
+                    'amoscore' => '@vendor/open20/amos-core/i18n',
                     'amos' => '@common/translation/amos/i18n',
                     'amosplatform' => '@common/translation/amosplatform/i18n',
                     'amosapp' => '@common/translation/amosapp/i18n',
