@@ -13,9 +13,9 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=5.4.0",
-    "bower-asset/jquery.scrollTo": "*",
+    "bower-asset/jquery.scrollto": "*",
     "bower-asset/modernizr": "*",
-    "bower-asset/scrollMonitor": "*",
+    "bower-asset/scrollmonitor": "*",
     "bower-asset/skrollr": "*",
     "open20/amos-admin": "^2.2.0",
     "open20/amos-attachments": "^1.2.1",
